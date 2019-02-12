@@ -7,7 +7,10 @@ namespace Week02
         static void Main(string[] args)
         {
             // Create variables and do things with them!
-            
+            int i = 1;
+            while (i <= 10000000){
+                System.Console.WriteLine(i++);
+            }
         }
     }
 }
