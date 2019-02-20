@@ -8,8 +8,10 @@ namespace Week02
         {
             // Create variables and do things with them!
             int i = 1;
-            while (i <= 10000000){
-                System.Console.WriteLine(i++);
+            Convert.ToInt64(i);
+            while (i <= 1000000000 || i >= 1000000000){
+                
+                System.Console.WriteLine("$"+ i++);
             }
         }
     }
