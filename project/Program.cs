@@ -19,13 +19,11 @@ namespace week10
            if(gender == "time to respek whamen"){
                System.Console.WriteLine("you win");
                win = false;
-               break;
            }
            System.Console.WriteLine("what is your name?");
            string playername = Console.ReadLine();
            if(playername == "Ethan"){
                 die();
-                break;
             }
            System.Console.WriteLine("you will be living at \n28500 Clemens Rd Westlake OH, 44145 USA");
             System.Console.WriteLine("you are now 1 year old \nwhat do you want to do");
@@ -39,11 +37,9 @@ namespace week10
             }
             else if(year1 == "do the high jump at peterson pool"){
                 die();
-                break;
             }
             else{
                 die();
-                break;
             }
             System.Console.WriteLine("you are now 2 years old \nnothing happens");
             System.Console.WriteLine("you are now 3 years old \nyour dog spock dies at the age of 8 \nhe was run over by the millennium falcon");
@@ -63,7 +59,6 @@ namespace week10
             }
             else{
                 die();
-                break;
             }
             System.Console.WriteLine("you are now 5 years old\nnothing happens");
             System.Console.WriteLine("you are now 6 years old\nnothing happens");
@@ -85,7 +80,6 @@ namespace week10
             }
             else{
                 die();
-                break;
             }
             System.Console.WriteLine("you are now 8 years old\nnothing happens");
             System.Console.WriteLine("yor are now 9 years old\nyou are asked to be in a school play by your teatcher");
@@ -107,9 +101,12 @@ namespace week10
                     year9 = Console.ReadLine();
                 }
             }
+            else if(year9 == "rage"){
+                System.Console.WriteLine("you kill the teatcher");
+                killCount = killCount + 1;
+            }
             else{
                 die();
-                break;
             }
             System.Console.WriteLine("you are now 10 years old\nyou are given $10 for turning 10");
             money = money + 10;
@@ -124,7 +121,6 @@ namespace week10
             if(year14 == "take the offer"){
                 System.Console.WriteLine("you are cought in the bathroom by a teatcher");
                 die();
-                break;
             }
             else if(year14 == "decline"){
                 System.Console.WriteLine("the kid understands");
@@ -139,11 +135,9 @@ namespace week10
                 else if(year14a == "i was going to tell the teacher"){
                     System.Console.WriteLine("the kid...");
                     die();
-                    break;
                 }
                 else{
                     die();
-                    break;
                 }
             }
             System.Console.WriteLine("you are now 15 years old\nyou are offered to get a temps");
@@ -158,7 +152,7 @@ namespace week10
             else if(year16 == "don't play"){
                 System.Console.WriteLine("you saved yourself a lot of money!");
             }
-            driversLicens();
+            driversTest();
             System.Console.WriteLine("you are now 17 years old\nnothing happens");
             driversTest();
             System.Console.WriteLine("you are now 18 years old\nyou graduated high school\nyou can also vote");
@@ -170,30 +164,24 @@ namespace week10
                 System.Console.WriteLine("painter, engineer, computer programmer, researcher, or apple pie");
                 string year18 = Console.ReadLine();
                 if(year18 == "painter"){
-                    System.Console.WriteLine("your job is painting\n you paint an apple and sell it for $1000000000000");
-                    money = money + 1000000000000;
-                    income = money + 10000;
+                    System.Console.WriteLine("your job is painting\n you paint an apple and sell it for $1000000");
+                    money = money + 1000000;
                 }
                 else if(year18 == "engineer"){
                     System.Console.WriteLine("you now work for apple making the next iphone");
-                    income = money + 2500000;
                 }
                 else if(year18 == "computer programmer"){
                     System.Console.WriteLine("you win");
-                    break;
                 }
                 else if(year18 == "researcher"){
                     System.Console.WriteLine("you research the big bang at cal tech");
-                    income = money + 1;
                 }
                 else if(year18 == "apple pie"){
                     System.Console.WriteLine("you are weird");
                     die();
-                    break;
                 }
                 else{
                     die();
-                    break;
                 }
                 jobans = true;
             }
@@ -202,7 +190,6 @@ namespace week10
             }
             else{
                 die();
-                break;
             }
             System.Console.WriteLine("you are now 19 years old");
             driversTest();
@@ -221,7 +208,6 @@ namespace week10
             }
             else{
                 die();
-                break;
             }
             System.Console.WriteLine("you are now 20 years old");
             driversTest();
@@ -236,12 +222,11 @@ namespace week10
                 if(year20a == "yes"){
                     System.Console.WriteLine("it agrees");
                 }
-                else if(year20q == "no"){
+                else if(year20a == "no"){
                     System.Console.WriteLine("you guys break up and that was  your only chance at love");
                 }
                 else{
                     die();
-                    break;
                 }
             }
             else if(year20 == "no"){
@@ -249,7 +234,6 @@ namespace week10
             }
             else{
                 die();
-                break;
             }
             System.Console.WriteLine("you are now 21 years old");
             System.Console.WriteLine("you can now drink!!");
@@ -271,7 +255,6 @@ namespace week10
             }
             else{
                 die();
-                break;
             }
             System.Console.WriteLine("you are now 23 years old");
             driversTest();
@@ -505,65 +488,57 @@ namespace week10
             System.Console.WriteLine("you are now 99 years old");
             driversTest();
             income();
-            int asdf = Random.next(1,11);
-                if(asdf = 1){
+            Random testTemp = new Random();
+            int asdf = testTemp.Next(1,11);            
+                if(asdf ==  1){
                     System.Console.WriteLine("you die boi");
                     die();
-                    break;
                 }
-                else if(asdf = 2){
+                else if(asdf == 2){
                     System.Console.WriteLine("you die boi");
                     die();
-                    break;
                 }
-                else if(asdf = 3){
+                else if(asdf == 3){
                     System.Console.WriteLine("you die boi");
                     die();
-                    break;
                 }
-                else if(asdf = 4){
+                else if(asdf == 4){
                     System.Console.WriteLine("you die boi");
                     die();
-                    break;
                 }
-                else if(asdf = 5){
+                else if(asdf == 5){
                     System.Console.WriteLine("you die boi");
                     die();
-                    break;
                 }
-                else if(asdf = 6){
+                else if(asdf == 6){
                     System.Console.WriteLine("you die boi");
                     die();
-                    break;
                 }
-                else if(asdf = 7){
+                else if(asdf == 7){
                     System.Console.WriteLine("you die boi");
                     die();
-                    break;
                 }
-                else if(asdf = 8){
+                else if(asdf == 8){
                     System.Console.WriteLine("you die boi");
                     die();
-                    break;
                 }
-                else if(asdf = 9){
+                else if(asdf == 9){
                     System.Console.WriteLine("you die boi");
                     die();
-                    break;
                 }
-                else if(asdf = 10){
+                else if(asdf == 10){
                     System.Console.WriteLine("you are almost there");
                 }
             System.Console.WriteLine("you are 1 day till 100 years old");
             System.Console.WriteLine("while out to buy a birthday cake\nand you slip and fall on a banana and die");
             die();
-            break;
             System.Console.WriteLine("you are now 100 years old");
             System.Console.WriteLine("you win");
         }
         public static void die(){
             System.Console.WriteLine("you die");
             win = false;
+            
         }
         public static void income(){
             if(jobans = true){
@@ -571,7 +546,7 @@ namespace week10
             }
         }
         public static void driversTest(){
-            if(driversLicens = false){
+            if(driversLicens == false){
                 System.Console.WriteLine("you are offred to get a drivers licens\nwill u accept\nyes or no");
                 string ans = Console.ReadLine();
                 if(ans == "yes"){
@@ -590,11 +565,10 @@ namespace week10
                         }
                         else{
                             die();
-                            break;
                         }
                     }
                     if(num == 2){
-                        System.Console.WriteLine("when 2 cars reach an intrection who was the right away");
+                        System.Console.WriteLine("when 2 cars reach an intrection who was the right away\nit is a 4 way stopsign and the car is to your left");
                         System.Console.WriteLine("the car on the left or the right");
                         string num2 = Console.ReadLine();
                         if(num2 == "left"){
@@ -606,7 +580,6 @@ namespace week10
                         }
                         else{
                             die();
-                            break;
                         }
                     }
                     if(num == 3){
@@ -622,7 +595,6 @@ namespace week10
                         }
                         else{
                             die();
-                            break;
                         }
                     }
                     if(num == 4){
@@ -634,7 +606,7 @@ namespace week10
                         }
                         else if(num4 == "20"){
                             System.Console.WriteLine("correct");
-                            driversTest == true;
+                            driversLicens = true;
                         }
                         else if(num4  == "25"){
                             System.Console.WriteLine("incorrect");
@@ -644,7 +616,6 @@ namespace week10
                         }
                         else{
                             die();
-                            break;
                         }
                     }
                     if(num == 5){
@@ -666,7 +637,6 @@ namespace week10
                         }
                         else{
                             die();
-                            break;
                         }
                     }
                     if(num == 6){
@@ -688,7 +658,6 @@ namespace week10
                         }
                         else{
                             die();
-                            break;
                         }
                     }
                     if(num == 7){
@@ -710,7 +679,6 @@ namespace week10
                         }
                         else{
                             die();
-                            break;
                         }
                     }
                     if(num == 8){
@@ -732,7 +700,6 @@ namespace week10
                         }
                         else{
                             die();
-                            break;
                         }
                     }
                     if(num == 9){
@@ -754,7 +721,6 @@ namespace week10
                         }
                         else{
                             die();
-                            break;
                         }
                     }
                     if(num == 10){
@@ -776,7 +742,6 @@ namespace week10
                         }
                         else{
                             die();
-                            break;
                         }
                     }
                     if(num == 11){
@@ -798,7 +763,6 @@ namespace week10
                         }
                         else{
                             die();
-                            break;
                         }
                     }
                     if(num == 12){
@@ -820,7 +784,6 @@ namespace week10
                         }
                         else{
                             die();
-                            break;
                         }
                     }
                 }
